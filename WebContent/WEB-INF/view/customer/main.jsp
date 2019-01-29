@@ -14,7 +14,7 @@
 	</tr>
 	<tr  style="height: 300px">
 		<td id="side-menu">
-			<%@ include file="side-menu.jsp" %>
+
 		</td>
 		<td>
 		</td>

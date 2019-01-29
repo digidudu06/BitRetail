@@ -6,5 +6,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="${context}/resources/css/style.css" />
+<link rel="stylesheet" href="${css}/reset.css" />
+<link rel="stylesheet" href="${css}/navi_bar.css" />
+<link rel="stylesheet" href="${css}/main.css" />
+<link rel="stylesheet" href="${css}/register.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>

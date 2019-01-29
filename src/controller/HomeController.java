@@ -19,12 +19,14 @@ public class HomeController extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
 		session.setAttribute("context", request.getContextPath());
+		session.setAttribute("css", session.getAttribute("context")+"/resources/css");
+		session.setAttribute("js", session.getAttribute("context")+"/resources/js");
 		EmployeeDTO e = (EmployeeDTO) session.getAttribute("admin");
 		if(e==null) {
 			request.setAttribute("compo", "pre_navi");
 		}else {
 			request.setAttribute("compo", "post_navi");
-			}
+		}
 		
 		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/view/home/main.jsp");
 		rd.forward(request, response);

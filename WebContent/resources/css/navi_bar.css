@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.ul_navi_bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.ul_navi_bar li a {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+  font-size: 25px;
+}
+.ul_navi_bar li a:hover {
+  background-color: #555;
+  color: white;
+}
+/* .ul_navi_bar li a.active {
+  color: #551a8b;
+} */
+.ul_navi_bar li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}

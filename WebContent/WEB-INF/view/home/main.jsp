@@ -4,46 +4,65 @@
 <jsp:include page="head.jsp"/>
 
 <body>
+	<div class="grid_container">
+		<div class="grid_item" id="item1"><jsp:include page="header.jsp" /></div>
+		<div class="grid_item" id="item2">
+			<c:choose>
+				<c:when test="${compo eq 'pre_navi'}">
+					<jsp:include page="pre-navi-bar.jsp" />
+				</c:when>
+				<c:otherwise>
+					<jsp:include page="post-navi-bar.jsp" />
+				</c:otherwise>
+			</c:choose>
+		</div>
+		<div class="grid_item" id="item3">로그인</div>
+		<div class="grid_item" id="item4"><jsp:include
+				page="side-menu.jsp" /></div>
+		<div class="grid_item" id="item5">
+			<c:choose>
+				<c:when test="${compo eq 'pre_navi'}">
+					<jsp:include page="../employee/register.jsp" />
+				</c:when>
+				<c:otherwise>
+					<jsp:include page="../employee/access.jsp" />
+				</c:otherwise>
+			</c:choose>
+		</div>
+		<div class="grid_item" id="item6"><jsp:include page="footer.jsp" /></div>
+	</div>
+</body>
+<script>
+
+</script>
+</html>
+<!-- 
 <table id="wrapper">
 	<tr>
 		<td colspan="2">
-			<jsp:include page="header.jsp"/>
+			
 		</td>
 	</tr>
 	<tr>
 		<td colspan="2">
-			<c:choose>
-				<c:when test="${compo eq 'pre_navi'}">
-					<jsp:include page="pre-navi-bar.jsp"/>
-				</c:when>
-				<c:otherwise>
-					<jsp:include page="post-navi-bar.jsp"/>
-				</c:otherwise>
-			</c:choose>
+			
 		</td>
 	</tr>
 	<tr  style="height: 300px">
 		<td style="width: 30%">
-			<jsp:include page="side-menu.jsp"/>
+			
 		</td>
 		<td>
 			<div id="content">
-				<c:choose>
-					<c:when test="${compo eq 'pre_navi'}">
-						<jsp:include page="../employee/register.jsp"/>
-					</c:when>
-					<c:otherwise>
-						<jsp:include page="../employee/access.jsp"/>
-					</c:otherwise>
-				</c:choose>
+				
 			</div>
 		</td>
 	</tr>
 	<tr>
 		<td colspan="2">
-			<jsp:include page="footer.jsp"/>
+			
 		</td>
 	</tr>
 </table>
 </body>
-</html>
+</html> -->

@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<div id="navi-bar">
+<div id="ul_navi-bar">
 	<ul>
 		<li><a href="home.do">홈</a></li>
 		<li><a href="#">카테고리</a></li>
